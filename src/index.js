@@ -20,6 +20,7 @@ const onClickAdd = () => {
     alert("削除");
     const deleteTarget = button2.parentNode;
     console.log(deleteTarget);
+    document.getElementById("incomplete-list").removeChild(deleteTarget);
   });
   console.log(button1, button2);
   div.appendChild(li);
