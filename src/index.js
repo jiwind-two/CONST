@@ -18,6 +18,8 @@ const onClickAdd = () => {
   button2.innerText = "削除";
   button2.addEventListener("click", () => {
     alert("削除");
+    const deleteTarget = button2.parentNode;
+    console.log(deleteTarget);
   });
   console.log(button1, button2);
   div.appendChild(li);
